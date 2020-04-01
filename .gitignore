@@ -1,0 +1,21 @@
+# dependencies
+apps/my-app/node_modules
+apps/my-app/.pnp
+apps/my-app/.pnp.js
+
+# testing
+apps/my-app/coverage
+
+# production
+apps/my-app/build
+
+# misc
+apps/my-app/DS_Store
+apps/my-app/env.local
+apps/my-app/env.development.local
+apps/my-app/env.test.local
+apps/my-app/env.production.local
+
+apps/my-app/npm-debug.log*
+apps/my-app/yarn-debug.log*
+apps/my-app/yarn-error.log*
