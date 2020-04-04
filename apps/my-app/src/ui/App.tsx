@@ -1,26 +1,17 @@
 import React from 'react';
-import logo from '../logo/logo.svg';
-import '../assets/App.scss';
+import { Navbar } from 'react-bootstrap';
+import { Logo } from './components/Logo';
+import { globals } from './globals/globals';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App: React.FC = () => (
+  <div className={'App'}>
+    <Navbar bg={globals.colorTheme} variant={globals.colorTheme}>
+      <Navbar.Brand href={'#home'}>
+        <Logo />
+        React Test App
+      </Navbar.Brand>
+    </Navbar>
+  </div>
+);
 
 export default App;
