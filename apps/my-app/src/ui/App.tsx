@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppRouter } from './components/AppRouter';
+import { AppRoutes } from './components/AppRoutes';
 import { allAppRoutes } from '../routes';
 import { BasePage } from './pages/BasePage';
 import { NotFoundPage } from './pages/NotFoundPage';
@@ -7,7 +7,7 @@ import { NotFoundPage } from './pages/NotFoundPage';
 const App: React.FC = () => (
   <div className={'app'}>
     <BasePage>
-      <AppRouter routes={allAppRoutes} notFoundPage={NotFoundPage} />
+      <AppRoutes routes={allAppRoutes} notFoundPage={NotFoundPage} />
     </BasePage>
   </div>
 );

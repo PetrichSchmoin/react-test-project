@@ -1,4 +1,4 @@
-import { RouteConfig } from './ui/components/AppRouter';
+import { RouteConfig } from './ui/components/AppRoutes';
 import { WelcomePage } from './ui/pages/WelcomePage';
 
 export const allAppRoutes: RouteConfig[] = [

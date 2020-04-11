@@ -7,19 +7,15 @@ export type RouteConfig = {
   component?: React.ComponentType;
 };
 
-const RouteByConfig = ({ path, exact, component }: RouteConfig) => (
-  <Route exact={exact} path={path} component={component} />
-);
-
 export type AppRouterProps = {
   routes: RouteConfig[];
   notFoundPage?: React.ComponentType;
 };
 
-export const AppRouter: React.FC<AppRouterProps> = ({ routes, notFoundPage }) => (
+export const AppRoutes: React.FC<AppRouterProps> = ({ routes, notFoundPage }) => (
   <Switch>
-    {routes.map((config: RouteConfig, i: number) => (
-      <RouteByConfig key={i} {...config} />
+    {routes.map(({ path, exact, component }: RouteConfig, i: number) => (
+      <Route key={i} exact={exact} path={path} component={component} />
     ))}
     <Route component={notFoundPage} />
   </Switch>
