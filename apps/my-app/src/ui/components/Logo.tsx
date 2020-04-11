@@ -1,4 +1,9 @@
 import React from 'react';
-import { ReactComponent as LogoSVG } from '../../logo/logo.svg';
 
-export const Logo: React.FC = () => <LogoSVG className={'logo'} />;
+export const Logo: React.FC = () => (
+  <img
+    className={'logo'}
+    src={'https://ultimatehackingkeyboard.com/wordpress/wp-content/uploads/front-split-transparent-1280.png'}
+    alt={'logo'}
+  />
+);
