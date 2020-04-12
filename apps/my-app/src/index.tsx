@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/scss/_index.scss';
+import './i18n';
 import App from './ui/App';
 import { Router } from 'react-router';
 import { browserHistory } from './browserhistory';
