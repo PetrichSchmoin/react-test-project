@@ -1,12 +1,17 @@
 import React from 'react';
 import { PageCard } from '../components/PageCard';
 import { Card } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
-export const WelcomePage: React.FC = () => (
-  <PageCard>
-    <Card.Body>
-      <Card.Title>Welcome!</Card.Title>
-      <Card.Text>Nice to see you here!</Card.Text>
-    </Card.Body>
-  </PageCard>
-);
+export const WelcomePage: React.FC = () => {
+  const { t } = useTranslation();
+
+  return (
+    <PageCard>
+      <Card.Body>
+        <Card.Title>{t('WelcomePage.Title')}</Card.Title>
+        <Card.Text>{t('WelcomePage.Text')}</Card.Text>
+      </Card.Body>
+    </PageCard>
+  );
+};

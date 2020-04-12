@@ -1,0 +1,10 @@
+{
+  "Errors": {
+    "Err404Title": "Error 404 - Page not found!",
+    "Err404Message": "The requested page doesn't exist!"
+  },
+  "WelcomePage": {
+    "Title": "Welcome!",
+    "Text": "Nice to see you here!"
+  }
+}
